@@ -16,6 +16,8 @@ public class HW1 {
           System.out.println("t: \t" + s);
           System.out.println("My name in Slack: " + myNameInSlack);
 
+        System.out.println("Hello Javaaaaaaaaaaaaa!");
+
 
 
 
