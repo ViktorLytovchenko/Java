@@ -8,7 +8,7 @@ public class Lesson7 {
 
 
 
-        //объект типа String catName со значением "Рыжик"
+        //объект типа String catName со значением "Рыжик" git status
         String catName = new String("Рыжик");
 
         //Распечатать объект типа String со значением "Рыжик"
