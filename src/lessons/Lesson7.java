@@ -14,7 +14,6 @@ public class Lesson7 {
         //Распечатать объект типа String со значением "Рыжик"
         System.out.println(catName);
 
-
         //Резервирование ячейки памяти типа String-массив (catsNames),
         // в которой будет содержаться ссылка на массив
         String[] catsNames;
