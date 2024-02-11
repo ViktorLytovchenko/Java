@@ -86,8 +86,8 @@ public class Lesson7 {
         //System.out.println(catsNames[8]);
 
         //Распечатать "Погладь кота!", если имя кота == "Рыжик"
-        for (int i = 0; i < catsNames.length; i++) {
-            if (catsNames[i].equals("Рыжик")) {
+        for (String catsName : catsNames) {
+            if (catsName.equals("Рыжик")) {
                 System.out.println("Погладь кота!");
                 break;
             }
