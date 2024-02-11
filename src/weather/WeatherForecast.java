@@ -1,4 +1,4 @@
-package Weather;
+package weather;
 
 public class WeatherForecast {
     public static void main(String[] args){

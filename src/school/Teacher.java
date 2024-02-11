@@ -8,8 +8,6 @@ public class Teacher extends Person {
 //          int a = 3;
 //          String world = "hello";
 
-
-
 //        System.out.println("First name: Maria, " +
 //                "Middle name: Ivanovna," +
 //                "Last name: Petrova");
@@ -22,7 +20,6 @@ public class Teacher extends Person {
 ////        System.out.println("Middle name: Ivanovna,");
 ////        System.out.println("Lastname: Petrova");
 
-
 //        System.out.println(
 //                "First name: Maria, \n" +
 //                "Middle name: Ivanovna, \n" +
@@ -30,7 +27,6 @@ public class Teacher extends Person {
 //                "Age: 35 y.o. \n" +
 //                "Subject: Russian Literature"
 //     );
-
 
         int age = 35;
         String firstName = "Maria";
@@ -63,7 +59,7 @@ public class Teacher extends Person {
         String middleName1 = "Serebryakov";
         String subject1 = "Mathematica";
 
-        System.out.println("##################################");
+        System.out.println("**********************************");
         System.out.println(
                 "First name: \t"
                         + firstName1
@@ -80,18 +76,7 @@ public class Teacher extends Person {
                         + "Subject: \t\t"
                         + subject1
         );
-                System.out.println("###################################");
-
-
-
-
-
-
-
-
-
-
+        System.out.println("**********************************");
     }
-
 }
 
