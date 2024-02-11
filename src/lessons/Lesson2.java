@@ -1,8 +1,5 @@
 package lessons;
 
-
-import java.sql.SQLOutput;
-
 public class Lesson2 {
     public static void main(String[] args) {
         String line = "__________________________________";
@@ -32,7 +29,6 @@ public class Lesson2 {
         int c = 5;
         int tempB = b;
 
-
         System.out.println(a + b);
         System.out.println(line);
 
@@ -51,7 +47,6 @@ public class Lesson2 {
 
         int subAB = a - b;
         int subBA = b - a;
-
 
         int task3Solution = sumBC + subAB;
         int task4Solution = sumBC + subBA;
@@ -72,7 +67,6 @@ public class Lesson2 {
         System.out.println(line);
 
         int remAB = a % b;
-
 
         System.out.println(remAB);
         System.out.println(line);
@@ -107,9 +101,5 @@ public class Lesson2 {
         System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         System.out.println(tempB);
         System.out.println(b);
-
-
-
-
     }
 }

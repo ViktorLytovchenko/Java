@@ -2,7 +2,6 @@ package homework;
 
 public class HW6 {
 
-
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -18,7 +17,7 @@ public class HW6 {
     static char subTask = 'a';
 
     public static void printnumber() {
-        System.out.println(line + ANSI_PURPLE + "\n\t\t\tЗадание "+ ANSI_RESET + taskNumber++ + "\n" + line);
+        System.out.println(line + ANSI_PURPLE + "\n\t\t\tЗадание " + ANSI_RESET + taskNumber++ + "\n" + line);
     }
 
     public static void numberFor(double start, double end, double step) {
@@ -34,7 +33,6 @@ public class HW6 {
             }
         }
     }
-
 
     public static void letterFor(char n, char m) {
         if ((n >= 97 && n <= 122) && (m >= 97 && m <= 122) || (n >= 65 && n <= 90) && (m >= 65 && m <= 90)) {
@@ -92,12 +90,7 @@ public class HW6 {
         }
     }
 
-
     public static void main(String[] args) {
-
-
-
-
 
         printnumber();
 //      1.Распечатать последовательность чисел от 0 до 9 включительно.
@@ -123,7 +116,7 @@ public class HW6 {
         printnumber();
 //      4.Распечатать последовательность чисел, кратных 7, в промежутке (327, 300)
 
-        for (int i = 326;i > 300; i --) {
+        for (int i = 326; i > 300; i--) {
             if (i % 7 == 0) {
                 System.out.println(i);
             }
@@ -139,7 +132,7 @@ public class HW6 {
         printnumber();
 //      6.Распечатать последовательность четных чисел от 215 до 237 включительно
 
-        for (int i = 214; i < 238; i +=2) {
+        for (int i = 214; i < 238; i += 2) {
 
             System.out.println(i);
         }
@@ -158,7 +151,7 @@ public class HW6 {
 //      значения типа данных short и заканчивается максимальным значением short.
 //      Числа в последовательности должны быть кратны 15001.
 
-        for (short i = Short.MIN_VALUE; i < Short.MAX_VALUE ; i += 15001) {
+        for (short i = Short.MIN_VALUE; i < Short.MAX_VALUE; i += 15001) {
             if (i % 15001 == 0) {
                 System.out.println(i);
             }
@@ -183,20 +176,19 @@ public class HW6 {
             }
         }
 
-
 //      10.Написать метод, который принимает на вход параметры start,  end, step, и
 //      печатает последовательность десятичных  чисел, начиная с числа start, с
 //      шагом step. Точка выхода из цикла - число end.
 
         printnumber();
-        numberFor(10.0,0,-1);
+        numberFor(10.0, 0, -1);
 
 //      11.Написать метод, который принимает на вход параметры n и m типа char, и
 //      выводит на печать последовательность букв английского алфавита в
 //      промежутке между значениями n и m включительно.
 
         printnumber();
-        letterFor('a','y');
+        letterFor('a', 'y');
 
 //      12.Написать метод, который принимает параметр  и печатает  последовательность
 //      четных чисел от нуля. Длина последовательности = L.
@@ -226,14 +218,11 @@ public class HW6 {
             System.out.println(i + "" + i + i + i);
         }
 
-          printnumber();
+        printnumber();
 //        15.Написать метод, который генерирует  последовательность чисел:
 //        0, 1, -1, 2, -2, 3, -3, 4, -4, 5, -5
 //        Метод формирует строку из сгенерированных значений, и выводит
 //        результат единожды на печать. ПРотестировать этот метод.
-
-
-
 
         printnumber();
         printOddNumber(2, 30, 4);
@@ -241,38 +230,33 @@ public class HW6 {
 //        последовательность нечетных чисел,  начиная с числа n, с шагом m,
 //        длина последовательности.
 
-
-          printnumber();
-          randomMethod(-3,18,5);
+        printnumber();
+        randomMethod(-3, 18, 5);
 //        18.Написать метод, который принимает на вход параметры n, m, l и генерирует
 //        последовательность случайных целых чисел в промежутке от n до m  включительно.
 //        Длина последовательности - . Вывести результат на печать
 
-
-          printnumber();
-          method19(16,4);
+        printnumber();
+        method19(16, 4);
 //        19.Сгенерируйте и распечатайте последовательность чисел, где для каждого
 //        положительного или отрицательного значения n выводится на печать значение,
 //        рассчитанное по формуле:
 
-
-
-          printnumber();
+        printnumber();
 //        20.Написать метод, который принимает параметры , n, и печатает последовательность чисел по формуле
 
-
-         printnumber();
+        printnumber();
 //       21.Сгенерируйте последовательность целых положительных  двузначных чисел,
 //       в которых разница между первой цифрой (десятки) и второй цифрой (единицы) не превышает 3.
 
-         printnumber();
+        printnumber();
 //       22.Написать метод, который вычислит значение функции:
 
-         printnumber();
+        printnumber();
 //       23.Написать метод, который генерирует последовательность простых
 //       положительных чисел и выводит последовательность на печать
 
-         printnumber();
+        printnumber();
 //        24.Написать метод, который принимает на вход параметры day = “Sun”,
 //        month = 10, date = 2, и выводит на печать  последовательность:
 //        Sun, Oct 02
@@ -283,55 +267,6 @@ public class HW6 {
 //        Fri, Oct 07
 //        Sat, Oct 08
 //        Sun, Oct 09
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

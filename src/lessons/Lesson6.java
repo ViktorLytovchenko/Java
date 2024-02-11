@@ -50,13 +50,11 @@ public class Lesson6 {
             System.out.println(i);
         }
 
-
         //Печатаем только нечетные числа от -100 до 100 иcключительно кратно 15
 
         for (int i = 0; i <= 100; i += 15) {
             System.out.println(i);
         }
-
 
 //    Печатаем все буквы от русской "a" до русской "я" включительно
         char Character;
@@ -65,7 +63,6 @@ public class Lesson6 {
 ////
         for (char i = 'а'; i <= 'я'; i++) {
             System.out.println(i);
-
         }
     }
 }

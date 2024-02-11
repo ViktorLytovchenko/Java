@@ -1,29 +1,24 @@
 package homework;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class HW7 {
 
-
-
     static char subTask = 'a';
     static int tcNumber = 1;
     static String tab = "\t\t\t\t\t\t";
-    static String  line= "*********************************************************";
+    static String line = "*********************************************************";
 
     public static void printTCNumber() {
         System.out.println(line + '\n' + tab + "Задание " + tcNumber++ + '\n' + line);
     }
 
-
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
 //        1.Прочитать ссылку про оператор switch в документации Oracle, посмотреть видео
 //        (ссылки в презентации), и переписать  методы returnMonth(), returnDayOfTheWeek()
 //        с помощью оператора switch.
         printTCNumber();
-
 
 //        2.Написать универсальный метод для построения последовательности, которая начинается
 //        с числа start, заканчивается числом end (оба включительно). Все числа в этой
@@ -31,9 +26,6 @@ public class HW7 {
 //        первое кратное число в диапазоне [start, end] и строить последовательность (возрастающую или убывающую)
 //        от вычисленного первого кратного числа с шагом step.
         printTCNumber();
-
-
-
 
 //        3.Создать массив catsNames[], заполнить его любыми своими значениями (не такими, как были на уроке).
 
@@ -158,14 +150,14 @@ public class HW7 {
 
 //        14.Распечатать имена всех котов, чей возраст больше 2 лет
         printTCNumber();
-        for (int i = 0; i < catsNames.length; i ++) {
+        for (int i = 0; i < catsNames.length; i++) {
             if (catsAges[i] > 2)
                 System.out.println(catsNames[i]);
-            }
+        }
 
 //        15.Распечатать “Накорми … !” , где … - имя кота, а значение isCatRed == true
         printTCNumber();
-        if (catsNames.length == isCatRed.length);
+        if (catsNames.length == isCatRed.length) ;
         for (int i = 0; i < catsNames.length; i++) {
             if (isCatRed[i]) {
                 System.out.println("Накорми " + catsNames[i] + "а!");
@@ -179,7 +171,6 @@ public class HW7 {
                     + catsAges[6] + catsAges[7] + catsAges[0]) / 7;
             System.out.println(sumAges);
             break;
-
         }
 
 //        17.Распечатать возраст самого молодого кота
@@ -192,11 +183,8 @@ public class HW7 {
         }
         System.out.println(min + " ");
 
-
-
 //        18.Распечатать возраст самого старого кота
         printTCNumber();
-
 
 //        19.Распечатать количество серых котов и количество рыжих котов
         printTCNumber();
@@ -218,47 +206,10 @@ public class HW7 {
 //        и его возраст не больше 2 лет.
         printTCNumber();
         if (catsNames.length == catsAges.length) {
-            for (int i = 1; i < catsAges.length; i +=2) {
+            for (int i = 1; i < catsAges.length; i += 2) {
                 if (catsAges[i] <= 2)
                     System.out.println(catsNames[i] + " ");
-                }
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
     }
 }

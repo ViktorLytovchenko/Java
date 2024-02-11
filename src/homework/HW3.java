@@ -2,8 +2,6 @@ package homework;
 
 public class HW3 {
 
-
-
     public static void main(String[] args) {
 
         String line = "__________________________________";
@@ -106,28 +104,5 @@ public class HW3 {
         } else {
             System.out.println("Fail");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
+    }
 }

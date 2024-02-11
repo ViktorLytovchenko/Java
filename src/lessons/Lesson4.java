@@ -108,7 +108,6 @@ public class Lesson4 {
         String hi2 = "Hi";
         System.out.println(hi1.equals(hi2));
 
-
 //        int k = 5;
 //        int l = 10;
 //        int m = 15;
@@ -183,8 +182,6 @@ public class Lesson4 {
 //
 //        System.out.println(vLine + k + endLine);
 //        System.out.println(line);
-
-
     }
 }
 

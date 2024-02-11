@@ -6,8 +6,6 @@ public class Lesson7 {
 
     public static void main(String[] args) {
 
-
-
         //объект типа String catName со значением "Рыжик" git status
         String catName = new String("Рыжик");
 
@@ -19,7 +17,6 @@ public class Lesson7 {
         String[] catsNames;
 
         // System.out.println(catsNames);
-
 
         //Создание объекта типа String-массив (catsNames),  состоящий из 8 ячеек
 
@@ -39,15 +36,12 @@ public class Lesson7 {
         System.out.println(catsAges);
         System.out.println(catsAges1);
 
-
         // Распечатать массив catsAges с помощью класса Arrays
         System.out.println(Arrays.toString(catsAges));
         System.out.println(Arrays.toString(catsAges1));
 
-
         //Заполнить массив catsNames значениями
         catsNames = new String[]{"Дымка", "Черныш", "Кокос", "Васька", "Рыжик", "Снежок", "Братиш", "Матроскин"};
-
 
         //Распечатать массив catsNames
         System.out.println(Arrays.toString(catsNames));
@@ -62,7 +56,6 @@ public class Lesson7 {
         catsAges[6] = 10;
         catsAges[7] = 0;
 
-
         //Распечатать массив catsAges
         System.out.println(Arrays.toString(catsAges));
 
@@ -76,9 +69,8 @@ public class Lesson7 {
         // Распечатать значение, лежащее в ячейках 2, 4 массива catsAges
         System.out.println(catsAges[2] + " " + catsAges[4]);
 
-
         //Распечатать значения массива catsNames циклом for
-        for(int i = 0; i <= 7; i ++) {
+        for (int i = 0; i <= 7; i++) {
             System.out.print(catsNames[i] + " ");
         }
 
@@ -86,14 +78,12 @@ public class Lesson7 {
         System.out.println(catsNames.length);
         System.out.println(catsAges.length);
 
-
-        for(int i = 0; i < catsNames.length; i ++) {
+        for (int i = 0; i < catsNames.length; i++) {
             System.out.print(catsNames[i] + " ");
         }
 
         System.out.println();
         //System.out.println(catsNames[8]);
-
 
         //Распечатать "Погладь кота!", если имя кота == "Рыжик"
         for (int i = 0; i < catsNames.length; i++) {
@@ -103,13 +93,10 @@ public class Lesson7 {
             }
         }
 
-
         //Распечатать "Погладь кота!" для кота в коробке с номером 4
         for (int i = 4; i < catsNames.length - 3; i++) {
             System.out.println("Погладь кота!");
         }
-
-
 
         //Распечатать номер коробки/ячейки массива catsNames, в которой сидит кот Рыжик
         for (int i = 0; i < catsNames.length; i++) {
@@ -128,11 +115,8 @@ public class Lesson7 {
         }
 
         System.out.println(counter);
-
-
     }
 }
-
 
 
 

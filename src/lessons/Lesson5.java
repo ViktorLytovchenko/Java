@@ -7,7 +7,7 @@ public class Lesson5 {
     static int m = 5;
     public static String return14KLM(int parameter1, int parameter2, String varName1, String varName2) {
 
-        int quotient = parameter1 /parameter2;
+        int quotient = parameter1 / parameter2;
         int remainder = parameter1 % parameter2;
 
         String result = ("Результат деления " + varName1 + " на " + varName2 + " = " + quotient
@@ -25,22 +25,17 @@ public class Lesson5 {
         return result;
     }
 
-
-    public static int countAveSpeed (double distance, double time) {
+    public static int countAveSpeed(double distance, double time) {
         int result = (int) (distance / time);
 
         return result;
     }
 
-
-
-
-
 //|||||||||||||||||||||||||||||||||||||Part 2|||||||||||||||||||||||||||||||||||||||||||||||||||||
 
     //Найти максимальное значение и протестировать работу методов.
 
-    public static int findMaxOutTwo (int a, int b) {
+    public static int findMaxOutTwo(int a, int b) {
         int max;
 
         if (a >= b) {
@@ -51,15 +46,12 @@ public class Lesson5 {
         return max;
     }
 
+    public static int findMaxOutTwo1(int a, int b) {
 
-
-    public static int findMaxOutTwo1 (int a, int b) {
-
-        return Math.max(a,b);
+        return Math.max(a, b);
     }
 
-
-    public static int findMaxOutTwo2 (int a, int b) {
+    public static int findMaxOutTwo2(int a, int b) {
         if (a >= b) {
             return a;
         } else {
@@ -68,14 +60,13 @@ public class Lesson5 {
     }
 
     static int tcNumber = 1;
-    public static void printTCNumber () {
+    public static void printTCNumber() {
         System.out.print("TC_" + tcNumber++ + "\t -- \t");
     }
 
-    public static void printTestResult (String value) {
+    public static void printTestResult(String value) {
         System.out.println(value);
     }
-
 
     public static String verifyEquals(int expectedResult, int actualResult) {
 
@@ -85,7 +76,6 @@ public class Lesson5 {
             return "Fail";
         }
     }
-
 
     public static String verifyEquals(String expectedResult, String actualResult) {
 
@@ -105,12 +95,11 @@ public class Lesson5 {
         }
     }
 
-
-    public static int findMaxOutFour (int a, int b, int c, int d) {
+    public static int findMaxOutFour(int a, int b, int c, int d) {
         int max;
         int max1;
 
-        if (a >= b)  {
+        if (a >= b) {
             max = a;
         } else {
             max = b;
@@ -127,8 +116,7 @@ public class Lesson5 {
         }
     }
 
-
-    public static int findMaxOutFour1 (int a, int b, int c, int d) {
+    public static int findMaxOutFour1(int a, int b, int c, int d) {
         int max;
 
         if (a >= b) {
@@ -145,15 +133,12 @@ public class Lesson5 {
         return max;
     }
 
-
-
-    public static int findMaxOutFour2 (int a, int b, int c, int d) {
+    public static int findMaxOutFour2(int a, int b, int c, int d) {
 
         return Math.max(a, Math.max(b, Math.max(c, d)));
     }
 
-
-    public static int findMaxOutFour4 (int a, int b, int c, int d) {
+    public static int findMaxOutFour4(int a, int b, int c, int d) {
 
         return findMaxOutTwo(a, findMaxOutTwo(b, findMaxOutTwo(c, d)));
     }
@@ -202,22 +187,16 @@ public class Lesson5 {
         return "Error";
     }
 
-
-
     // написать метод, который получает на вход растояние.....
 
     public static String evaluateDistance(double distance) {
         int km = (int) distance;
-        int m = (int)((distance - km) * 1000);
+        int m = (int) ((distance - km) * 1000);
 
         return "" + km + " км. " + m + " м.";
     }
 
-
-
-
     public static void main(String[] args) {
-
 
 //        System.out.println(doubleTheValue(6));
 //
@@ -240,7 +219,6 @@ public class Lesson5 {
 
 //|||||||||||||||||||||||||||||||||||||Part 2|||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-
 //        System.out.println(findMaxOutTwo(10,200));
 //        System.out.println(findMaxOutTwo(3,3));
 //        System.out.println(findMaxOutTwo(9,5));
@@ -253,9 +231,7 @@ public class Lesson5 {
 //        System.out.println(findMaxOutTwo2(5,5));
 //        System.out.println(findMaxOutTwo2(2,10));
 
-
         printTCNumber();
-
 
         //Auto Test 1
         //TC_1
@@ -268,16 +244,14 @@ public class Lesson5 {
 
         //Act - произвести какие - то действия (н-р вызвать метод) для получения actual result
 
-        int actualResult =findMaxOutTwo(a,b);
+        int actualResult = findMaxOutTwo(a, b);
 
         //A = assert - сравнение expectedResult с actualResult и вывод о том, прошел тест или упал.
 
-        verifyEquals(expectedResult,actualResult);
-
+        verifyEquals(expectedResult, actualResult);
 
         //ОТЧЕТ (report)
         printTestResult(verifyEquals(expectedResult, actualResult));
-
 
         //Auto Test 2
         //TC_2
@@ -285,23 +259,7 @@ public class Lesson5 {
         b = 3;
         expectedResult = 3;
 
-        actualResult = findMaxOutTwo(a,b);
-
-        verifyEquals(expectedResult,actualResult);
-
-
-        //ОТЧЕТ (report)
-        printTCNumber();
-        printTestResult(verifyEquals(expectedResult, actualResult));
-
-
-        //Auto Test 3
-        //TC_3
-        a = 10;
-        b = 5;
-        expectedResult = 10;
-
-        actualResult = findMaxOutTwo(a,b);
+        actualResult = findMaxOutTwo(a, b);
 
         verifyEquals(expectedResult, actualResult);
 
@@ -309,15 +267,27 @@ public class Lesson5 {
         printTCNumber();
         printTestResult(verifyEquals(expectedResult, actualResult));
 
-        verifyEquals("hi","hi"); //Pass
-        verifyEquals(3.3,3.3); // Pass
-        verifyEquals(4,5); // Fail
+        //Auto Test 3
+        //TC_3
+        a = 10;
+        b = 5;
+        expectedResult = 10;
 
+        actualResult = findMaxOutTwo(a, b);
+
+        verifyEquals(expectedResult, actualResult);
+
+        //ОТЧЕТ (report)
+        printTCNumber();
+        printTestResult(verifyEquals(expectedResult, actualResult));
+
+        verifyEquals("hi", "hi"); //Pass
+        verifyEquals(3.3, 3.3); // Pass
+        verifyEquals(4, 5); // Fail
 
         //TC_4
         int number = 5;
         String expectedResultString = "May";
-
 
         String actualResultString = returnMonth(number);
 
@@ -326,7 +296,6 @@ public class Lesson5 {
         //ОТЧЕТ (report)
         printTCNumber();
         printTestResult(verifyEquals(expectedResultString, actualResultString));
-
 
         //TC_5
         number = 13;
@@ -340,9 +309,7 @@ public class Lesson5 {
         printTCNumber();
         printTestResult(verifyEquals(expectedResultString, actualResultString));
 
-
         System.out.println(evaluateDistance(2.5));
-
 
         //TC_6
 
@@ -351,18 +318,12 @@ public class Lesson5 {
 
         actualResultString = evaluateDistance(distance);
 
-        verifyEquals(expectedResultString,actualResultString);
+        verifyEquals(expectedResultString, actualResultString);
 
         //ОТЧЕТ (report)
         printTCNumber();
         printTestResult(verifyEquals(expectedResultString, actualResultString));
 
         System.out.println(evaluateDistance(distance));
-
-
-
-
-
     }
-
 }

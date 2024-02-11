@@ -2,7 +2,6 @@ package homework;
 
 public class HW5 {
 
-
     static int tcNumber = 1;
 
     public static void printTCNumber() {
@@ -85,7 +84,6 @@ public class HW5 {
             }
         }
         return "Error";
-
     }
 
 //    Number 3
@@ -107,13 +105,12 @@ public class HW5 {
             int averageYears = (yearsFather + yearsMather + yearsSun) / 3;
 
             return averageYears;
-
         }
 
         return Integer.MIN_VALUE;
     }
 
-//    Number 4
+    //    Number 4
 //    Найти минимальное  значение, используя переменные (по одному методу на каждый вариант)
 //    k и l
 //    k, l, m
@@ -157,7 +154,6 @@ public class HW5 {
 
         return findMimOutTwo(k, findMimOutTwo(l, findMimOutTwo(m, n)));
     }
-
 
 //    Number 5
 //   Написать алгоритм вычисления среднего значения из 5 показателей
@@ -249,7 +245,6 @@ public class HW5 {
 
         return "" + fullName + "\t\t\t" + rub + " руб " + kop1 + " коп";
     }
-
 
 //    Number 9
 //  Создать метод, который печатает ведомость для нескольких сотрудников, используя метод из задачи 8, например:
@@ -412,36 +407,7 @@ public class HW5 {
 //        int mean = a + b + c / 3;
 //    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
-
-
 
 //        TC_1
         printTCNumber();
@@ -455,8 +421,6 @@ public class HW5 {
 
         printTestResult(verifyEquals(expectedResult, actualResult));
 
-
-
 //        TC_2
         printTCNumber();
 
@@ -465,14 +429,12 @@ public class HW5 {
         int yearsSun = 20;
 
         int expectedResultEX2 = 40;
-        int actualResultEX2 = averageYears(60,40,20);
+        int actualResultEX2 = averageYears(60, 40, 20);
 
-        verifyEquals(expectedResultEX2,actualResultEX2);
+        verifyEquals(expectedResultEX2, actualResultEX2);
 
 //        ОТЧЕТ (report)
-        printTestResult(verifyEquals(expectedResultEX2,actualResultEX2));
-
-
+        printTestResult(verifyEquals(expectedResultEX2, actualResultEX2));
 
 //      TC_3
         int k = 50;
@@ -480,68 +442,58 @@ public class HW5 {
 
         int expectedResultEX4 = 25;
 
-        int actualResultEX4 = findMimOutTwo(k,l);
+        int actualResultEX4 = findMimOutTwo(k, l);
 
-        verifyEquals(expectedResultEX4,actualResultEX4);
-
+        verifyEquals(expectedResultEX4, actualResultEX4);
 
 //      ОТЧЕТ (report)
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX4,actualResultEX4));
-
+        printTestResult(verifyEquals(expectedResultEX4, actualResultEX4));
 
         //  ОТЧЕТ (report)
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX4,actualResultEX4));
-
+        printTestResult(verifyEquals(expectedResultEX4, actualResultEX4));
 
         int m = 75;
 
         expectedResultEX4 = 25;
 
-        actualResultEX4 = findMimOutThree(k,l,m);
+        actualResultEX4 = findMimOutThree(k, l, m);
 
-        verifyEquals(expectedResultEX4,actualResultEX4);
+        verifyEquals(expectedResultEX4, actualResultEX4);
 
 //      ОТЧЕТ (report)
         tcNumber = 4;
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX4,actualResultEX4));
-
-
-
+        printTestResult(verifyEquals(expectedResultEX4, actualResultEX4));
 
         int n = 17;
 
         expectedResultEX4 = 17;
 
-        actualResultEX4 = findMimOutFour(k,l,m,n);
+        actualResultEX4 = findMimOutFour(k, l, m, n);
 
-        verifyEquals(expectedResultEX4,actualResultEX4);
+        verifyEquals(expectedResultEX4, actualResultEX4);
 
 //      ОТЧЕТ (report)
         tcNumber = 4;
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX4,actualResultEX4));
-
+        printTestResult(verifyEquals(expectedResultEX4, actualResultEX4));
 
         printTCNumber();
 
-
 //        tempBodyCat(35.0,37.0,38.0,39.5,41.0);
-        printTestResult(tempBodyCat(35.0,37.0,38.0,39.5,41.0));
-
+        printTestResult(tempBodyCat(35.0, 37.0, 38.0, 39.5, 41.0));
 
         printTCNumber();
 //        workSalary(8,12);
-
 
 //        int workHoursDay = 9;
 //        int priceHoursDay = 12;
 
         int expectedResultEX6 = 2268;
 
-        int actualResultEX6 = workSalary(9,12);
+        int actualResultEX6 = workSalary(9, 12);
 
         verifyEquals(expectedResultEX6, actualResultEX6);
 
@@ -549,20 +501,14 @@ public class HW5 {
         printTestResult(verifyEquals(expectedResultEX6, actualResultEX6));
         printTCNumber();
 
-
-
         int expectedResultEX7 = 18;
 
-        String actualResultEX7 = sumPrice(20.5,0.9);
+        String actualResultEX7 = sumPrice(20.5, 0.9);
 
         verifyEquals(expectedResultEX7, Double.parseDouble(actualResultEX7));
 
         //ОТЧЕТ (report)
         printTestResult(verifyEquals(expectedResultEX7, Double.parseDouble(actualResultEX7)));
-
-
-
-
 
 //        printTCNumber();
 //        TC_8
@@ -570,46 +516,41 @@ public class HW5 {
         double salary = 70000.00;
         String expectedResultEX8 = "Смирнова Мария Ивановна\t\t\t70000 руб 00 коп";
 
-        String actualResultEX8 = payRoll(fullName,salary);
+        String actualResultEX8 = payRoll(fullName, salary);
 
-        verifyEquals(expectedResultEX8,actualResultEX8);
+        verifyEquals(expectedResultEX8, actualResultEX8);
 
 //        ОТЧЕТ (report)
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX8,actualResultEX8));
-
-
+        printTestResult(verifyEquals(expectedResultEX8, actualResultEX8));
 
         fullName = "";
         salary = 70000.00;
         expectedResultEX8 = "";
 
-        actualResultEX8 = payRoll(fullName,salary);
+        actualResultEX8 = payRoll(fullName, salary);
 
-        verifyEquals(expectedResultEX8,actualResultEX8);
+        verifyEquals(expectedResultEX8, actualResultEX8);
 
 //        ОТЧЕТ (report)
         tcNumber = 8;
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX8,actualResultEX8));
-
+        printTestResult(verifyEquals(expectedResultEX8, actualResultEX8));
 
         fullName = "Смирнова Мария Ивановна";
         salary = 0;
         expectedResultEX8 = "";
 
-        actualResultEX8 = payRoll(fullName,salary);
+        actualResultEX8 = payRoll(fullName, salary);
 
-        verifyEquals(expectedResultEX8,actualResultEX8);
+        verifyEquals(expectedResultEX8, actualResultEX8);
 
 //        ОТЧЕТ (report)
         tcNumber = 8;
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX8,actualResultEX8));
+        printTestResult(verifyEquals(expectedResultEX8, actualResultEX8));
 
         printTCNumber();
-
-
 
 //        TC_11
         double price = 10.75;
@@ -617,14 +558,12 @@ public class HW5 {
 
         String actualResultEX11 = price(price);
 
-        verifyEquals(expectedResultEX11,actualResultEX11);
+        verifyEquals(expectedResultEX11, actualResultEX11);
 
 //        ОТЧЕТ (report)
         tcNumber = 11;
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX11,actualResultEX11));
-
-
+        printTestResult(verifyEquals(expectedResultEX11, actualResultEX11));
 
 //         TC_11
         price = -15.2;
@@ -632,15 +571,12 @@ public class HW5 {
 
         actualResultEX11 = price(price);
 
-        verifyEquals(expectedResultEX11,actualResultEX11);
+        verifyEquals(expectedResultEX11, actualResultEX11);
 
 //        ОТЧЕТ (report)
         tcNumber = 11;
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX11,actualResultEX11));
-
-
-
+        printTestResult(verifyEquals(expectedResultEX11, actualResultEX11));
 
 //        TC_12
         double totalWeight = 10.075;
@@ -648,20 +584,17 @@ public class HW5 {
 
         String actualResultEX12 = weight(totalWeight);
 
-        verifyEquals(expectedResultEX12,actualResultEX12);
+        verifyEquals(expectedResultEX12, actualResultEX12);
 
 //        ОТЧЕТ (report)
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX12,actualResultEX12));
+        printTestResult(verifyEquals(expectedResultEX12, actualResultEX12));
 
 //        TC_13
         printTCNumber();
-        printTestResult(verifyEquals(expectedResultEX12,actualResultEX12));
-
-
-      }
-
+        printTestResult(verifyEquals(expectedResultEX12, actualResultEX12));
     }
+}
 
 
 

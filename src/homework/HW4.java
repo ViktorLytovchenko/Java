@@ -2,15 +2,11 @@ package homework;
 
 public class HW4 {
 
-
-
     static String line = "_________________________________________________________";
     static String task = "\nTask # ";
     static int number = 2;
     static char subTask = 'a';
     static int SubTaskNumber = 1;
-
-
 
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BLACK = "\u001B[30m";
@@ -22,12 +18,10 @@ public class HW4 {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
-
     public static void printTask() {
         System.out.println(ANSI_CYAN + line + ANSI_RESET);
         System.out.print(ANSI_RED + task + ANSI_RESET);
         System.out.println(number++);
-
     }
     public static void weather(int temp) {
         double fah = (1.8 * temp) + 32;
@@ -38,28 +32,24 @@ public class HW4 {
                 + ANSI_RED + temp + " °C" + ANSI_RESET + " = " + ANSI_PURPLE + kel + " K" + ANSI_RESET);
     }
 
-
-    public static void task14( int parametr1, int parametr2, String varName1, String varName2) {
+    public static void task14(int parametr1, int parametr2, String varName1, String varName2) {
         int quotient = parametr1 / parametr2;
         int remainder = parametr1 % parametr2;
 
         System.out.println(
                 "Результат деления " + varName1 + " на " + varName2 + " = " + quotient
-                + ", а остаток от деления = " + remainder
+                        + ", а остаток от деления = " + remainder
         );
-
-
     }
 
     static int rab;
     static int pheas;
 
-    public static void task15(int sumLegs, int sumHead){
+    public static void task15(int sumLegs, int sumHead) {
         rab = (sumLegs - (sumHead * 2)) / 2;
         System.out.println(rab + " кроликов");
         pheas = sumHead - rab;
         System.out.println(pheas + " фазанов");
-
     }
 
     public static void task16(double distance, double time) {
@@ -74,11 +64,12 @@ public class HW4 {
 //    printtask14(k, m, "k", "m");
 //    printtask14(l, m, "l", "m");
 
-   // System.out.println()
+    // System.out.println()
 
-    public static void letters(String text,double Num,String text2,double Num2) {
+    public static void letters(String text, double Num, String text2, double Num2) {
 
-    };
+    }
+    ;
 
     public static void task17(int apple, int student) {
         int studApple = apple / student;
@@ -140,7 +131,6 @@ public class HW4 {
                 + "и " + forTeacher + " яблок" + chT + " останется учителю.");
     }
 
-
     public static void main(String[] args) {
 
         printTask();
@@ -179,7 +169,6 @@ public class HW4 {
         System.out.println(++SubTaskNumber);
         System.out.println(!(str.equals(str1)));
         System.out.println(++SubTaskNumber);
-
 
 //        System.out.println("!" + "(" + q + "Сосна" + q + " = " + q + "Дуб" + q + ");");
 ////        !(15 < 3);
@@ -278,7 +267,6 @@ public class HW4 {
 //      Иначе вывести на печать “Число x меньше 11, больше или равно 0, но не равно 5”. Проверить,
 //      соответствует ли последнее утверждение всем предыдущим утверждениям.
 
-
         int x = 0;
 
         if (x > 10) {
@@ -306,12 +294,10 @@ public class HW4 {
             System.out.println(number * number);
         }
 
-
 //   11.Напишите алгоритм проверки возраста на соответствие условиям (if-else):
 //   a. Голосовать можно с 18 лет
 //   b. Машину можно водить с 16 лет
 //   c. В школу можно идти с 5 лет
-
 
         printTask();
 
@@ -321,7 +307,7 @@ public class HW4 {
 
             if (ageYou >= 18) {
                 System.out.println(subTask++ + "." + "Ты можешь голосовать ");
-            } else  {
+            } else {
                 System.out.println(subTask++ + "." + "Ты не можешь голосовать ");
             }
             if (ageYou >= 16) {
@@ -331,11 +317,10 @@ public class HW4 {
             }
             if (ageYou >= 5) {
                 System.out.println(subTask++ + "." + "Ты можешь идти в садик ");
-            } else  {
+            } else {
                 System.out.println(subTask++ + "." + "Ты не можешь идти в школу ");
             }
         }
-
 
         printTask();
 
@@ -355,14 +340,11 @@ public class HW4 {
             System.out.println("Введите правильное значение");
         }
 
-
 //   12.Напишите метод, который примет на вход температуру в Цельсиях, и распечатает результат температуры
 //   в Цельсиях и в Фаренгейтах.
 
-
         printTask();
         weather(20);
-
 
         //  13.Напишите алгоритм программы, которая проверяет 2 числа.
 //   Программа складывает числа, которые делятся на 3 без
@@ -397,7 +379,6 @@ public class HW4 {
         printTask();
 //        task14();
 
-
 //        15.Решить задачу
 //        В клетке находятся фазаны и кролики. Известно, что у них 35 голов и 94 ноги.
 //        Узнайте число фазанов и число кроликов.
@@ -427,10 +408,8 @@ public class HW4 {
 //     150		  2,5 hours
 //     300		   1¾ hours
 
-
         printTask();
-        task16(12,20);
-
+        task16(12, 20);
 
 //   17.Выполнить задание 7 и 8 из HW2 с помощью метода и параметров:
 //   Написать метод так, чтобы правильные склонения слов
@@ -438,8 +417,6 @@ public class HW4 {
 //   Распечатать выражение с параметрами:
 //   apple = 42, 55, 1
 //   student = 42, 5, 2
-
-
 
         printTask();
         task17(42, 42);
@@ -450,22 +427,12 @@ public class HW4 {
 
         printTask();
 
-
-
-
 //   Напишите алгоритм программы, которая проверяет число типа short на количество разрядов,
 //   и выводит результат проверки.
 //   ( Например, “It’s a two-digit number.”, “It’s a five-digit number.”, etc)
 //   Выведите результат проверки на печать.
 
-
         printTask();
-
-
-
     }
-
-
-
 }
 

@@ -52,7 +52,7 @@ public class HW2 {
         int remAppleStudent = apple % student;
         System.out.println("Если " + apple + " яблок поделить на \n"
                 + student + " учеников, то каждый ученик \n получит по "
-                + divAppleStudent + " яблок и " + remAppleStudent + " яблока \n останется учителю." );
+                + divAppleStudent + " яблок и " + remAppleStudent + " яблока \n останется учителю.");
         System.out.println(line);
         System.out.println(task + ++number);
         apple = 100;
@@ -61,7 +61,7 @@ public class HW2 {
         remAppleStudent = apple % student;
         System.out.println("Если " + apple + " яблок поделить на \n"
                 + student + " учеников, то каждый ученик \n получит по "
-                + divAppleStudent + " яблока и " + remAppleStudent + " яблок \n останется учителю." );
+                + divAppleStudent + " яблока и " + remAppleStudent + " яблок \n останется учителю.");
         System.out.println(line);
 
         System.out.println(task + ++number);
@@ -125,9 +125,8 @@ public class HW2 {
         d. только одно из всех чисел кратно 7
         */
 
-
         System.out.println(task + ++number);
-        System.out.println( "a." + " 48 кратно 8, потому что остаток деления = " + (48 % 8));
+        System.out.println("a." + " 48 кратно 8, потому что остаток деления = " + (48 % 8));
         System.out.println("b." + " 48 и 8 четные, потому что остаток = " + (48 % 2) + " и " + (8 % 2));
         System.out.println("c." + " числа 47 и 49 - нечетные, потому что при делении остаток " + (47 % 2)
                 + " и " + (49 % 2));
@@ -235,7 +234,7 @@ public class HW2 {
         int yx = 18;
         int zx = xy * xy * xy;
         double result = zx * ((5 * xy + 7 * yx) / (8 * xy + 18 * yx)) / ((3 * xy - yx) / (double) (xy + yx));
-        System.out.println( "If \n x = 7 \n y = 18 \n n = 3 \n then \n x((5x + 7y) " +
+        System.out.println("If \n x = 7 \n y = 18 \n n = 3 \n then \n x((5x + 7y) " +
                 "/ (8x + 18y)) / ((3x - y) / (x + y)) = "
                 + result);
 
@@ -254,19 +253,9 @@ public class HW2 {
 //    Сумма чисел a, b, c++ и sumABC-- = …, а разность b++ и  sumCBA = …
 //    Вычислить выражения, если d = 4:
 
-
         System.out.println(task + ++number);
 
 //        (x + 3)²
-
-
-
-
-
-
-
-
-
 
     }
 }

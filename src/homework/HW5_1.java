@@ -22,7 +22,6 @@ public class HW5_1 {
         return "Fail";
     }
 
-
     public static String lettersABC(double a, double b, double c) {
         double sum;
         sum = (a * b) - c;
@@ -36,7 +35,6 @@ public class HW5_1 {
         }
         return null;
     }
-
 
     public static void main(String[] args) {
 
@@ -63,29 +61,24 @@ public class HW5_1 {
             System.out.println(i);
         }
 
-
         for (int i = 326; i > 300; i--) {
             if (i % 7 == 0) {
                 System.out.println(i);
             }
         }
 
-
         for (double i = 12.0; i <= 13.0; i += 0.1) {
-            i = Math.ceil (i * 100) / 100;
+            i = Math.ceil(i * 100) / 100;
             System.out.println(i + "");
-    }
-
-
+        }
 
         int number1 = 215;
         int number2 = 237;
         int start1 = number1 + number2 % 2;
 
-        for (int i = start1; i <= number2; i +=2) {
+        for (int i = start1; i <= number2; i += 2) {
             System.out.println(i + "");
         }
-
 
         int beginning2 = 7 + 1;
         int stop = 14 - 1;
@@ -103,35 +96,22 @@ public class HW5_1 {
         short b = Short.MAX_VALUE;
         int c = a % 15001;
         int d = a - c;
-        for (int i = d; i <=b; i += 15001) {
+        for (int i = d; i <= b; i += 15001) {
             System.out.println(i);
         }
 
-
-        for (int i = -10; i <= 34; i ++) {
+        for (int i = -10; i <= 34; i++) {
 
             if (i % 11 == 0 && i != 0) {
                 System.out.println(ANSI_BLUE + i + "" + ANSI_RESET);
-
-
             } else if (i % 12 == 0 && i != 0) {
                 System.out.println(i + " ");
-
             } else if (i == 0) {
                 System.out.println("ZERO");
-
             } else {
                 System.out.println(i + " ");
             }
         }
-
-
-
-
-
-
-
-
 
 //          actualResult = 10;
 //          expectedResult = lettersABC(7,2,4);
@@ -139,8 +119,6 @@ public class HW5_1 {
 
     }
 }
-
-
 
 //        int a = 2;
 //        int b = 3;
